@@ -5,7 +5,7 @@
 # Define variables
 PV_NAME="free5gc-local-pv"
 PV_PATH="/home/master/kubedata"
-PV_NODE_AFFINITY="nuc2"
+PV_NODE="master"
 
 # Check if required variables are set
 if [ -z "$PV_NAME" ] || [ -z "$PV_PATH" ] || [ -z "$PV_NODE_AFFINITY" ]; then
@@ -37,5 +37,5 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - $PV_NODE_AFFINITY
+          - $PV_NODE
 EOF
