@@ -8,9 +8,9 @@ PV_PATH="/home/master/kubedata"
 PV_NODE="master"
 
 # Check if required variables are set
-if [ -z "$PV_NAME" ] || [ -z "$PV_PATH" ] || [ -z "$PV_NODE_AFFINITY" ]; then
+if [ -z "$PV_NAME" ] || [ -z "$PV_PATH" ] || [ -z "$PV_NODE" ]; then
   echo "One or more required variables are not set."
-  echo "Please set PV_NAME, PV_PATH, and PV_NODE_AFFINITY to valid values."
+  echo "Please set PV_NAME, PV_PATH, and PV_NODE to valid values."
   exit 1
 fi
 
