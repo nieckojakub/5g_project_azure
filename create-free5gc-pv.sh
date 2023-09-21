@@ -5,7 +5,7 @@
 # Define variables
 PV_NAME="free5gc-local-pv"
 PV_PATH="/home/master/kubedata"
-PV_NODE="master"
+PV_NODE="k8-master"
 
 # Check if required variables are set
 if [ -z "$PV_NAME" ] || [ -z "$PV_PATH" ] || [ -z "$PV_NODE" ]; then
